@@ -1,69 +1,100 @@
 @page {
-  size: 21cm 29.7cm;
+  size: 210mm 297mm;
+  margin: 1mm;
 }
 
-.header {
-  margin-top: 9mm;
-  width: 203mm;
-  height: 25mm;
-  border: 1px solid black;
-}
-.string-top {
+.string-top, .string-bottom {
   padding-top: 4mm;
-  padding-left: 13mm;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 20px;
+ // padding-bottom: 4mm;
+  padding-left: 12mm;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13.5pt;
+  //word-spacing: -0.4em;
+  font-weight: 100 !important;
 }
 
 .string-bottom {
-  padding-top: 4mm;
-  padding-left: 13mm;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 20px;
+  padding-top: 6mm;
 }
 
-.stamps {
-  display: block;
+.outer {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.title-main {
   margin-top: 5mm;
+  box-sizing: border-box;
+  width: 203mm;
+  height: 25mm;
+  border: .5px solid gray;
+}
+
+.title-frame {
+  box-sizing: border-box; 
+  display: inline-block;
+  margin-top: 5mm;
+  margin-bottom: 5mm;
   margin-left: 20mm;
-  width: 164mm;
+  width: 165mm;
   height: 9mm;
-  border: 1px solid black;
-  padding-top: 4mm;
-  padding-left: 4mm;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 12px;
-}
+  border: .5px solid gray;
+  padding-top: 3mm;
+  padding-left: 3mm;
+  font-family: 'Arial','Helvetica',sans-serif;
+  font-size: 7pt;
 
-.stamps-wrap {
-  display: block;
-  margin-left: 25mm;
 }
-
-.copy {
-  display: flex;
-  align-items: flex-end;  
+.inner {
+  box-sizing: border-box;
+  background: #eee;
   width: 127mm;
-  height: 10mm;
-  border-bottom:1px solid black;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 12px;
+  height: 25mm;
+  margin-left: 23mm;
+}
+.wrap-wide {
+  box-sizing: border-box;
+  width: 127mm;
+  border-bottom: .5px solid gray;
 }
 
-.liner {
-  display: flex;
-  justify-content: flex-start;
-  width: 107mm;
-  height: 10mm;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 12px;
-} 
+.title-underlined {
+  font-family: 'Arial','Helvetica',sans-serif;
+  font-size: 7pt;
+}
+.wrap {
+  box-sizing: border-box;
+  width: 117mm;
+  //background: #eee;
+  height: 5mm;
+}
 
-.value {
-  display: flex;
-  justify-content: flex-start;
-  width: 20mm;
-  height: 10mm;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 12px;
-} 
+.left, .right {
+  box-sizing: border-box;
+  display: inline-block;
+  //display: inline;
+  //zoom: 1;
+  width: 100%;
+  margin-right: -100%;
+  vertical-align: bottom;
+  font-family: 'Arial','Helvetica',sans-serif;
+
+}
+
+.left {
+  font-size: 7pt;
+//  word-spacing: -0.4em;
+}
+.right {
+ 
+  font-size: 7.5pt;
+  text-align: right;
+}
+
+.shortnum {
+  width: 112.5mm;
+}
+
+.shortnum1 {
+  width: 111mm;
+}
