@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'HP Simplified';
+    src: local('HP Simplified Light'), local('HPSimplified-Light'),
+        url('subset-HPSimplified-Light.woff2') format('woff2'),
+        url('subset-HPSimplified-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
