@@ -1,6 +1,6 @@
 @page {
   size: 210mm 297mm;
-  margin: 1mm;
+  margin: .5mm;
 }
 
 @font-face {
@@ -12,35 +12,45 @@
   font-style: normal;
 }
 
-.string-top, .string-bottom {
-  padding-top: 4mm;
- // padding-bottom: 4mm;
-  padding-left: 12mm;
-  font-family: HPSimplified;
-  font-size: 13.5pt;
-// word-spacing: -0.1em;
-  
-}
+/* общие стили*/
 
-.string-bottom {
-  padding-top: 6mm;
-  word-spacing: -0.1em;
-}
 
+/* внещняя обертка всей страницы*/
 .outer {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-.title-main {
+
+/* основной заголовок страницы */
+/* .title__main рамка вокруг заголовка  */
+.title__main {
   margin-top: 5mm;
   box-sizing: border-box;
-  width: 203mm;
+  width: 202mm;
   height: 25mm;
   border: .5px solid gray;
 }
 
-.title-frame {
+.title__main-top {
+  padding-top: 4mm;
+/*padding-bottom: 4mm;*/
+  padding-left: 12mm;
+  font-family: HPSimplified;
+  font-size: 13.5pt;
+/* word-spacing: -0.1em;*/
+}
+
+.title__main-bottom {
+  padding-top: 6mm;
+  padding-left: 12mm;
+  font-family: HPSimplified;
+  font-size: 13.5pt;
+  word-spacing: -0.1em;
+}
+
+/* рамка вокруг подзаголовка */
+.subtitle__framed {
   box-sizing: border-box; 
   display: inline-block;
   margin-top: 5mm;
@@ -53,54 +63,58 @@
   padding-left: 3mm;
   font-family: HPSimplified;
   font-size: 7pt;
-
 }
+
+/* inner */
+/* контейнер группы строк с подзаголовком */
 .inner {
   box-sizing: border-box;
-  background: #eee;
+/*  background: #eee; */
   width: 127mm;
   height: 25mm;
   margin-left: 23mm;
 }
-.wrap-wide {
+
+/* подчеркивание подзаголовка*/
+.line__wide {
   box-sizing: border-box;
   width: 127mm;
   border-bottom: .5px solid gray;
 }
 
-.title-underlined {
+/* подчеркнутый поздзаголовок */
+.title__underlined {
   font-family: HPSimplified;
   font-size: 7pt;
 }
-.wrap {
+
+/* определяет размеры контейнера для пары параметр-значение*/
+.expression {
   box-sizing: border-box;
   width: 117mm;
-  //background: #eee;
   height: 5mm;
 }
 
-.left, .right {
+.parameter, .value {
   box-sizing: border-box;
   display: inline-block;
-  //display: inline;
-  //zoom: 1;
   width: 100%;
   margin-right: -100%;
   vertical-align: bottom;
   font-family: HPSimplified;
-
 }
 
-.left {
+.parameter {
   font-size: 7pt;
-//  word-spacing: -0.4em;
+/*word-spacing: -0.4em;*/
 }
-.right {
- 
+
+.value {
   font-size: 7.5pt;
   text-align: right;
 }
 
+/* подгонка значения столбца value*/
 .shortnum {
   width: 112.5mm;
 }
